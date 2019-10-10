@@ -1,0 +1,30 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.t.ts",
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "@types/dotenv": "^6.1.1",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
