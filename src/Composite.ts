@@ -1,11 +1,11 @@
 abstract class Component {
-    protected parent: Component
+    protected parent: Component | undefined
 
-    setParent(parent: Component): void {
+    setParent(parent: Component | undefined): void {
         this.parent = parent
     }
 
-    getParent(): Component {
+    getParent(): Component | undefined {
         return this.parent
     }
 
